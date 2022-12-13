@@ -1,0 +1,84 @@
+{% extends 'layout.html' %}
+
+{% block title %} Loruki - Features {% endblock title %}
+
+{% block content %}
+
+{% include 'resources/navbar.html' %}
+
+<section class="features bg-primary">
+    <div class="content grid">
+        <div class="features-text my-3">
+            <h1 class="xl">
+                Features
+            </h1>
+            <p class="secondary-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Quo eos quas aliquam culpa, quasi fugit, autem, dolor soluta libero odit numquam reiciendis. 
+            </p>
+        </div>
+        <img src="{{url_for('static', filename='images/server.png')}}" alt="vetorized server image. rounded rectangles forming a squase with
+        vertically distributed shapes">
+    </div>
+</section>
+
+<section class="description py-3">
+    <div class="container grid">
+        <div class="subheader">
+            <h1 class="lg py-3">The Loruki Plataform</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni ipsa, minima accusantium placeat natus nam laudantium sequi veniam nemo officiis ullam, temporibus dolor aut et molestias aliquid rem consectetur fugiat.
+            </p>
+        </div>
+        <img src="{{url_for('static', filename='images/server2.png')}}" alt="network simulation with computers, router, celphone and tabled connect by dots">
+
+    </div>
+</section>
+
+<section class="content-cards py-4">
+    <div class="container grid grid-3">
+        <div class="card flex">
+            <i class="fa-solid fa-bell-concierge xl"></i>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, enim, officiis unde voluptates doloremque, 
+                a temporibus sed hic aut impedit illum. Facilis, optio! Mollitia reiciendis perspiciatis expedita exercitationem, excepturi blanditiis?
+            </p>
+        </div>
+        <div class="card flex flex">
+            <i class="fa-solid fa-award xl"></i>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ratione eaque illum eligendi itaque, 
+                numquam quaerat, quibusdam minima provident alias dicta aliquam, deleniti laborum perspiciatis quo vel eius eos voluptates.
+            </p>
+        </div>
+        <div class="card flex">
+            <i class="fa-solid fa-bell xl"></i>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+        </div>
+        <div class="card flex">
+            <i class="fa-solid fa-bullseye xl"></i>
+            <p>
+                Lorem ipsum dolor sit amet.
+            </p>
+        </div>
+        <div class="card flex">
+            <i class="fa-solid fa-cannabis xl"></i>
+            <p>
+                Deleniti laborum perspiciatis quo vel eius eos voluptates.
+            </p>
+        </div>
+        <div class="card flex">
+            <i class="fa-solid fa-car xl"></i>
+            <p>
+                Eaque beatae sapiente blanditiis neque architecto nostrum atque. 
+            </p>
+        </div>
+    </div>
+</section>
+
+{% include 'resources/footer.html' %}
+        
+
+{% endblock content %}

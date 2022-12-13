@@ -1,0 +1,122 @@
+{% extends 'layout.html' %}
+
+{% block title %} Documentation {% endblock title %}
+
+{% block content %} 
+
+{% include 'resources/navbar.html' %}
+
+<!-- copied from features.html with adjustments -->
+<section class="features bg-primary">
+    <div class="content grid">
+        <div class="features-text my-3">
+            <h1 class="xl">
+                Docs
+            </h1>
+            <p class="secondary-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Quo eos quas aliquam culpa, quasi fugit, autem, dolor soluta libero odit numquam reiciendis. 
+            </p>
+        </div>
+        <img src="{{url_for('static', filename='images/docs.png')}}" alt="vetorized server image. rounded rectangles forming a squase with
+        vertically distributed shapes">
+    </div>
+</section>
+
+<section class="docs-container my-4">
+    <div class="container grid">
+        <div class="card bg-light p-3">
+            <h3 class="my-2">
+                Essentials
+            </h3>
+            <nav>
+                <ul>
+                    <li>
+                        <a class="text-primary" href="#introduction">Introduction</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#installation">Installation</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <h3 class="my-2">
+                Deployment
+            </h3>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#requirements">Requirements</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">Setup</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">Devices</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="card">
+            <h2 id="introduction">Introduction</h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi iste inventore cumque, quibusdam neque cupiditate saepe velit 
+                sapiente quisquam recusandae beatae, enim praesentium delectus consequatur sit ducimus officia numquam fugiat?
+            </p>
+            <div class="alert alert-success p-2">
+                <i class="fas fa-info"> </i>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis incidunt mollitia accusantium!
+            </div>
+            
+            <h3 id="about">About</h3>
+            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem ad pariatur iusto modi provident quod iste nisi adipisci impedit consectetur, 
+                tenetur reprehenderit quam aliquam soluta amet quae ea ex expedita necessitatibus esse enim hic! 
+                <br>
+                <a class="btn bg-primary" href="#">Install Cli</a>
+            </p>
+            
+            <h3 id="installation">Installation</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis cum nesciunt neque soluta iusto quam mollitia nobis numquam. Repudiandae nostrum voluptates quam et, dicta mollitia accusantium sequi reiciendis assumenda officia, ex, commodi architecto. 
+                Excepturi non sint placeat reiciendis velit perferendis quisquam numquam, in fugit consequuntur.
+
+                <p>MacOS</p>
+                <pre><code>$ brew install loruki-cli</code></pre>
+                
+                <p>Ubuntu</p>
+                <pre><code>$ sudo apt-get install loruki-cli</code></pre>
+
+                <p>NPM</p>
+                <pre><code>$ npm install loruki-cli</code></pre>
+
+                <p>Yarn</p>
+                <pre><code>$ yarn install loruki</code></pre>
+
+            </p>
+
+            <h3 id="requirements">Requirements</h3>
+            <ul>
+                <li>MacOS</li>
+                <li>Ubuntu</li>
+                <li>Node.js</li>
+            </ul>
+
+
+        </div>
+    </div>
+</section>
+
+{% include 'resources/footer.html' %}
+
+{% endblock content %}
